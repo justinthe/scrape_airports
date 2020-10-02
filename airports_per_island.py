@@ -18,7 +18,9 @@ base_url = "http://indonesiaairport.com/"
 for link in links:
     bs = openUrl(link)
     title = bs.find("p", {"align": "justify"})
-    island = title.get_text().replace(" ", "_").lower()
+    # island = title.get_text().replace(" ", "_").lower()
+    island = title.get_text()
+    island =  ''.join(e for e in island if e.isalnum()) 
     # print(island)
     
     filename = island + ".csv"
