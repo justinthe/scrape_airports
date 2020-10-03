@@ -20,3 +20,7 @@ for file_name in os.listdir(base_folder):
     airports = data['AirportName'].tolist()
     airports_df = pd.DataFrame(list(zip(links, airports)), columns = ['url', 'airport_name'])
     # print(airports_df.head())
+    # 1. open link
+    # 2. use AirportName as filename
+    # 3. read data from opened link
+    # 4. write data to #2
