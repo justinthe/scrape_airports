@@ -23,7 +23,8 @@ for link in links:
     island =  ''.join(e for e in island if e.isalnum()) 
     # print(island)
     
-    filename = island + ".csv"
+    base_folder = "scrape_data/"
+    filename = base_folder + island + ".csv"
     f = open(filename, "w+")
 
     table = bs.find("table", {"id": "AutoNumber4"})
