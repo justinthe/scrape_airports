@@ -22,7 +22,7 @@ def extractContentAndSave(bs, filename):
     text = raw_content.split()
     content = ""
 
-    fname = "airports_data/" + filename + ".csv"
+    fname = "airports_data/" + filename + ".txt"
     # fname = filename + ".csv"
     f = open(fname, "w+")
 
