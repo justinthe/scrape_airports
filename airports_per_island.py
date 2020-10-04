@@ -2,7 +2,7 @@ from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import re
 import pandas as pd
-import unicodedata
+# import unicodedata
 
 def openUrl(url):
     html = urlopen(url)
